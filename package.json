@@ -2,9 +2,12 @@
   "name": "gulu",
   "version": "0.0.1",
   "description": "a UI framework for study vue components",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "dev-no-cache": "parcel index.html --no-cache",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,16 @@
   },
   "homepage": "https://github.com/a1067111756/zaolunzi#readme",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }

@@ -11,8 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+import Vue from 'vue'
+import Icon from './icon/index.vue'
+import Button from './button/index.vue'
 
-Vue.component('g-button', {
-  template: `<button class="g-button">按钮</button>`
+Vue.component('xp-button', Button)
+Vue.component('xp-icon', Icon)
+
+new Vue({
+  el: '#app'
 })
-
