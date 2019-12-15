@@ -27,12 +27,10 @@ export default {
     > .xp-button {
       margin-left: -1px;
       border-radius: 0;
-      &:not(:first-child) {
-        margin-left: 0;
-      }
       &:first-child {
         border-top-left-radius: var(--button-radius);
         border-bottom-left-radius: var(--button-radius);
+        margin-left: 0;
       }
       &:last-child {
         border-top-right-radius: var(--button-radius);
