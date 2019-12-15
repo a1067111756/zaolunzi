@@ -4,7 +4,7 @@
 
 <template>
   <svg class="xp-icon">
-    <use :xlink:href="`#icon-${icon}`"></use>
+    <use :xlink:href="`#icon-${icon}`" :class="icon"></use>
   </svg>
 </template>
 
@@ -17,4 +17,13 @@ export default {
 
 <style lang="scss" scoped>
   .xp-icon { width: 1.2em; height: 1.2em; }
+  
+  /* 加载图标动画 */
+  @keyframes spin {
+    0% { transform: rotate(0deg); transform-origin: 50%; }
+    100% { transform: rotate(360deg); transform-origin: 50%; }
+  }
+  .loading {
+    animation: spin 1s infinite linear;
+  }
 </style>

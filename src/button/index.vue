@@ -4,8 +4,8 @@
  *  3. 不同尺寸 medium / small / mini
  */
 <template>
-  <button class="xp-button" :class="{[`icon-size-${size}`]: true}">
-    <xp-icon v-if="icon" :icon="icon" style="margin-right: 4px;"></xp-icon>
+  <button class="xp-button" :class="{[`icon-size-${size}`]: true}" @click="$emit('click')">
+    <xp-icon v-if="icon" :icon="loading ? 'loading' : icon" style="margin-right: 4px;"></xp-icon>
     <slot></slot>
   </button>
 </template>
@@ -14,6 +14,10 @@
 export default {
   props: {
     icon: {},
+    loading: {
+      type: Boolean,
+      default: false  
+    },
     size: {
       type: String,
       default: 'medium',
