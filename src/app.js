@@ -14,7 +14,9 @@
 import Vue from 'vue'
 import Icon from './icon/index.vue'
 import Button from './button/index.vue'
+import ButtonGroup from './button-group/index.vue'
 
+Vue.component('xp-button-group', ButtonGroup)
 Vue.component('xp-button', Button)
 Vue.component('xp-icon', Icon)
 
