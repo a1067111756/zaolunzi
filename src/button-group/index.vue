@@ -11,8 +11,8 @@
 export default {
   mounted () {
     // 检测插槽中的元素是否时button
-    for (let node of this.$el.$children) {
-      if (node.nodeName !== 'button') {
+    for (let node of this.$el.children) {
+      if (node.nodeName !== 'BUTTON') {
         console.log(`xp-button-group的子元素应该时button, 但是当前传入是${node.nodeName}`)
       }
     }

@@ -16,7 +16,7 @@ export default {
     icon: {},
     loading: {
       type: Boolean,
-      default: false  
+      default: false
     },
     size: {
       type: String,
@@ -58,10 +58,6 @@ export default {
     }
     &.icon-size-medium {
       padding: 0.8em 1em;
-    }        
+    }
   }
-
-  
-
-  
 </style>
