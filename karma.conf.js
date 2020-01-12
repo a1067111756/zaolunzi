@@ -82,7 +82,7 @@ module.exports = function(config) {
        * 测试启动的浏览器
        * 可用的浏览器：https://npmjs.org/browse/keyword/karma-launcher
        */
-      browsers: ["Chrome"],
+      browsers: ["ChromeHeadless"],
 
 
       /**
